@@ -5,7 +5,7 @@ import pyzmp
 class ServerNode(pyzmp.Node):
     def __init__(self, name):
         super(ServerNode, self).__init__(name)
-        self.the_answer= 42
+        self.the_answer = 42
         self.provides(self.question)
 
     def question(self):
